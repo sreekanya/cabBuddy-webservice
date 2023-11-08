@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "7147655f-03ee-486a-8399-196c5e796a9c",
+		"name": "CabsBookingAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29784928"
+	},
+	"item": [
+		{
+			"name": "GetAllBookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8088/bookings"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/bookings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"bookingId\": 301,\n        \"customer_name\": \"sree\",\n        \"customer_email\": \"sree@gmail.com\",\n        \"customer_phone\": \"2345678120\",\n        \"date_booking\": \"2023-09-27\",\n        \"booking_from\": \"kukatapalli\",\n        \"booking_to\": \"lakdikapool\",\n        \"driverId\": \"4\",\n        \"cab_num\": \"2\",\n        \"no_passengers\": 1,\n        \"total_pay\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/bookings?bookingId=001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"bookings"
+					],
+					"query": [
+						{
+							"key": "bookingId",
+							"value": "001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/bookings/201",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8088/bookings/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/bookings",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n     \"bookingId\": 1,\n        \"customer_name\": \"Sree\",\n        \"customer_email\": \"sree@gmail.com\",\n        \"customer_phone\": \"123457655\",\n        \"date_booking\": \"2023-09-24\",\n        \"booking_from\": \"Milpitas\",\n        \"booking_to\": \"sunnyvale\",\n        \"driverId\": \"1234df\",\n        \"cab_num\": \"fg678\",\n        \"no_passengers\": 1,\n        \"total_pay\": 20\n    }\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8088/bookings"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/bookings/301",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8088/bookings/301"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "698c5157-bc7b-4cc4-a889-72753ebc5609",
+		"name": "DriverDetailsAPIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29784928"
+	},
+	"item": [
+		{
+			"name": "AddDriver",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"driverName\":\"John\",\n\t\"driverEmail\":\"john@simplilearn.com\",\n\t\"driverPhone\":\"9340234534\",\n    \"driverAddress\":\"Milpitas\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8088/driver-data"
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllDrivers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8088/driver-data"
+			},
+			"response": []
+		},
+		{
+			"name": "GetOneDriver",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8088/driver-data/3"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteDriver",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8088/driver-data/3"
+			},
+			"response": []
+		}
+	]
+}

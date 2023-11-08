@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "85fc737c-6c6c-4d9f-9725-439458497ce9",
+		"name": "CabAPIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29784928"
+	},
+	"item": [
+		{
+			"name": "GetAllCabs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8088/cabs"
+			},
+			"response": []
+		},
+		{
+			"name": "AddCabs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"carType\":\"suv\",\n\t\"model\":\"Honda crv\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8088/cabs"
+			},
+			"response": []
+		},
+		{
+			"name": "CabById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8088/cabs/2"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cabId\": 1,\n    \"model\": \"Audi\",\n    \"carType\": \"sedan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8088/cabs"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCab",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8088/cabs/1"
+			},
+			"response": []
+		}
+	]
+}
