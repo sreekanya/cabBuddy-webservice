@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cabBuddy.webservice.dto.ResponseDto;
 import com.cabBuddy.webservice.entity.DriverData;
 import com.cabBuddy.webservice.service.DriverDataService;
 
@@ -41,8 +42,9 @@ public class DriverDataController {
 	}
 	
 	@DeleteMapping("/driver-data/{driverId}")
-	public String deleteDriver(@PathVariable int driverId){
+	public ResponseDto deleteDriver(@PathVariable int driverId){
 		driverDataService.deleteDriverData(driverId);
-		return "Driver Data is deleted sucessfully with driverId : "+driverId;
+		//return "Driver Data is deleted sucessfully with driverId : "+driverId;
+		return new ResponseDto("Driver is deleted sucessfully with driverId : "+driverId);
 	}
 }
