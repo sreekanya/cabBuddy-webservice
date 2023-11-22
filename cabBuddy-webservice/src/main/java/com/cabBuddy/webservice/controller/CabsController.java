@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cabBuddy.webservice.dto.ResponseDto;
 import com.cabBuddy.webservice.entity.Cabs;
 import com.cabBuddy.webservice.service.CabsService;
 
@@ -42,8 +43,11 @@ public class CabsController {
 	}
 	
 	@DeleteMapping("/cabs/{cabId}")
-	public String deleteCab(@PathVariable int cabId){
+	public ResponseDto deleteCab(@PathVariable int cabId){
 		cabsService.deleteCab(cabId);
-		return "Cab is deleted sucessfully with cabId : "+cabId;
+		//return "Cab is deleted sucessfully with cabId : "+cabId;
+		
+
+		return new ResponseDto("Cab is deleted sucessfully with cabId : "+cabId);
 	}
 }
