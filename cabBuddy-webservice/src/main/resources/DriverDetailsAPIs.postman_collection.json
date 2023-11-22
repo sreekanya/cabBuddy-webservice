@@ -13,14 +13,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"driverName\":\"John\",\n\t\"driverEmail\":\"john@simplilearn.com\",\n\t\"driverPhone\":\"9340234534\",\n    \"driverAddress\":\"Milpitas\"\n}",
+					"raw": "{\n    \"driverName\":\"Dennis\",\n\t\"driverEmail\":\"dennis@simplilearn.com\",\n\t\"driverPhone\":\"9340234534\",\n    \"driverAddress\":\"Milpitas\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://localhost:8088/driver-data"
+				"url": "http://localhost:8088/cabbuddy-webservice/api/driver-data"
 			},
 			"response": []
 		},
@@ -29,7 +29,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8088/driver-data"
+				"url": "http://localhost:8088/cabbuddy-webservice/api/driver-data"
 			},
 			"response": []
 		},
@@ -38,7 +38,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8088/driver-data/3"
+				"url": "http://localhost:8088/cabbuddy-webservice/api/driver-data/3"
 			},
 			"response": []
 		},
@@ -47,7 +47,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "http://localhost:8088/driver-data/3"
+				"url": "http://localhost:8088/cabbuddy-webservice/api/driver-data/3"
 			},
 			"response": []
 		}

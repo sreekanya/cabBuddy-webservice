@@ -11,7 +11,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8088/bookings"
+				"url": "http://localhost:8088/cabbuddy-webservice/api/bookings"
 			},
 			"response": []
 		},
@@ -22,30 +22,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n        \"bookingId\": 301,\n        \"customer_name\": \"sree\",\n        \"customer_email\": \"sree@gmail.com\",\n        \"customer_phone\": \"2345678120\",\n        \"date_booking\": \"2023-09-27\",\n        \"booking_from\": \"kukatapalli\",\n        \"booking_to\": \"lakdikapool\",\n        \"driverId\": \"4\",\n        \"cab_num\": \"2\",\n        \"no_passengers\": 1,\n        \"total_pay\": 10\n}",
+					"raw": "{\n    \n        \"customerName\": \"sree\",\n        \"customerEmail\": \"sree@gmail.com\",\n        \"customerPhone\": \"2345678120\",\n        \"dateBooking\": \"2023-11-27\",\n        \"bookingFrom\": \"kukatapalli\",\n        \"bookingTo\": \"lakdikapool\",\n        \"driverId\": {\"driverId\":\"2\"},\n        \"cabId\": {\"cabId\":\"1\"},\n        \"numPassengers\": 1,\n        \"totalPay\": 100\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:8088/bookings?bookingId=001",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8088",
-					"path": [
-						"bookings"
-					],
-					"query": [
-						{
-							"key": "bookingId",
-							"value": "001"
-						}
-					]
-				}
+				"url": "http://localhost:8088/cabbuddy-webservice/api/bookings"
 			},
 			"response": []
 		},
@@ -54,7 +38,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8088/bookings/1"
+				"url": "http://localhost:8088/cabbuddy-webservice/api/bookings/3"
 			},
 			"response": []
 		},
@@ -65,14 +49,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": " {\n     \"bookingId\": 1,\n        \"customer_name\": \"Sree\",\n        \"customer_email\": \"sree@gmail.com\",\n        \"customer_phone\": \"123457655\",\n        \"date_booking\": \"2023-09-24\",\n        \"booking_from\": \"Milpitas\",\n        \"booking_to\": \"sunnyvale\",\n        \"driverId\": \"1234df\",\n        \"cab_num\": \"fg678\",\n        \"no_passengers\": 1,\n        \"total_pay\": 20\n    }\n    ",
+					"raw": " {\n        \"bookingId\": 3,\n        \"customerName\": \"Johnson\",\n        \"customerEmail\": \"johnson@gmail.com\",\n        \"customerPhone\": \"47634532378\",\n        \"dateBooking\": \"2023-11-27T00:00:00.000+00:00\",\n        \"bookingFrom\": \"kukatapalli\",\n        \"bookingTo\": \"lakdikapool\",\n        \"driverId\": {\n            \"driverId\": 2\n        },\n        \"cabId\": {\n            \"cabId\": 1\n        },\n        \"numPassengers\": 1,\n        \"totalPay\": 10\n    }\n]\n    ",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://localhost:8088/bookings"
+				"url": "http://localhost:8088/cabbuddy-webservice/api/bookings"
 			},
 			"response": []
 		},
@@ -81,7 +65,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "http://localhost:8088/bookings/301"
+				"url": "http://localhost:8088/cabbuddy-webservice/api/bookings/301"
 			},
 			"response": []
 		}

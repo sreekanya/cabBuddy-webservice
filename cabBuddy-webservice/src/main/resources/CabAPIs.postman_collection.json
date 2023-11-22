@@ -11,7 +11,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8088/cabs"
+				"url": "http://localhost:8088/cabbuddy-webservice/api/cabs"
 			},
 			"response": []
 		},
@@ -22,14 +22,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"carType\":\"suv\",\n\t\"model\":\"Honda crv\"\n\t\n}",
+					"raw": "{\n    \"cabType\":\"ev\",\n\t\"cabModel\":\"Ioniq\"\n\t\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://localhost:8088/cabs"
+				"url": "http://localhost:8088/cabbuddy-webservice/api/cabs"
 			},
 			"response": []
 		},
@@ -38,7 +38,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8088/cabs/2"
+				"url": "http://localhost:8088/cabbuddy-webservice/api/cabs/1"
 			},
 			"response": []
 		},
@@ -49,14 +49,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"cabId\": 1,\n    \"model\": \"Audi\",\n    \"carType\": \"sedan\"\n}",
+					"raw": "{\n    \"cabId\": 1,\n    \"cabModel\": \"Audi\",\n    \"cabType\": \"sedan\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://localhost:8088/cabs"
+				"url": "http://localhost:8088/cabbuddy-webservice/api/cabs"
 			},
 			"response": []
 		},
@@ -65,7 +65,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "http://localhost:8088/cabs/1"
+				"url": "http://localhost:8088/cabbuddy-webservice/api/cabs/1"
 			},
 			"response": []
 		}
