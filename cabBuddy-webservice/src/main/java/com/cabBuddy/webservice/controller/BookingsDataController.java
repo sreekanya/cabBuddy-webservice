@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cabBuddy.webservice.dto.ResponseDto;
 import com.cabBuddy.webservice.entity.BookingsData;
 import com.cabBuddy.webservice.service.BookingsDataService;
 
@@ -42,8 +43,9 @@ public class BookingsDataController {
 	}
 	
 	@DeleteMapping("/bookings/{bookingId}")
-	public String deleteDriver(@PathVariable int bookingId){
+	public ResponseDto deleteDriver(@PathVariable int bookingId){
 		bookingsDataService.deleteBookingsData(bookingId);
-		return "Bookings Data is deleted sucessfully with bookingId : "+bookingId;
+		
+		return new ResponseDto("Bookings Data is deleted sucessfully with bookingId : "+bookingId);
 	}
 }
